@@ -1,6 +1,9 @@
-from fileone import classone
+from extraimport import lazyimport
+
+fileone = lazyimport()
+# from fileone import classone
 
 def func_two():
-    a = classone()
+    a = fileone.ClassOne()
     a.passed()
 
